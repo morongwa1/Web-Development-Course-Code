@@ -1,0 +1,16 @@
+const express =  require("express");     //requiring the express module
+
+const app =  express();  //initalising the new express app
+
+app.get("/", function(req, res){
+    res.send("Server is up and running.");
+})
+
+
+
+
+
+
+app.listen(3000, function(){     // listening on port 3000m and adding a call back function
+    console.log("Server running on port 3000.")
+})
